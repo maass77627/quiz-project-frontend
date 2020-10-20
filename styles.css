@@ -1,6 +1,7 @@
 div {
     background-color: rgb(49, 219, 191);
-    
+    height: 200px;
+  width: 50%;
 }
 
 button {
@@ -11,3 +12,16 @@ button {
 body {
     background-color: powderblue;
 }
+
+li {
+    position: relative;
+    color: blue;
+    font-size: 2 em;
+    background-color: powderblue;
+}
+
+::marker {
+    color: blue;
+    font-size: 1.2em;
+    
+  }
