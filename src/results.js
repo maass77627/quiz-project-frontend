@@ -1,8 +1,23 @@
 
 
-// function calculations() {
 
-// if (question )
+
+
+
+
+
+
+
+
+
+
+
+// submitButton.addEventListener("click", function(){
+//         if 
+    
+//   })
+
+// function calculations(array) {
 
 
 

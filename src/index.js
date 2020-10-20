@@ -2,7 +2,7 @@ const quizContainer = document.getElementById(`quiz`);
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 let i = 0
-//const myAnimals.
+
 
 const answerItema = document.createElement("li")
 const answerItemb = document.createElement("li")
@@ -36,10 +36,6 @@ function buildQuiz(num) {
     let answerB = myQuestions[num].answers.b;
     let answerC = myQuestions[num].answers.c;
 
-    // let answerItema = document.createElement("li")
-    // let answerItemb = document.createElement("li")
-    // let answerItemc = document.createElement("li")
-
     answerItema.innerText = answerA
     answerItemb.innerText = answerB
     answerItemc.innerText = answerC
@@ -55,6 +51,8 @@ function buildQuiz(num) {
   }
 
   function selectAnswers(allAnswers) {
+
+    let submittedAnswers = []
 
     let A = allAnswers[0]
     let B = allAnswers[1]
@@ -78,6 +76,9 @@ function buildQuiz(num) {
         B.style.color = "blue"
         C.style.color = "red"
     }) 
+
+    submittedAnswers.push(A, B, C)
+    calculations(submittedAnswers)
 
   }
 

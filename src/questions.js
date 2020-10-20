@@ -97,3 +97,17 @@ const myQuestions = [
 
 
 ]
+
+// class Scenario {
+
+//   constructor(number, question, answera, answerb, answerc, ) {
+//   this.number = number
+//   this.question = question
+//   this.answera = answera
+//   this.answerb = answerb
+//   this.answerc = answerc
+
+// }
+// }
+
+// let questionOne = new Scenario("1", "When the weekend comes I like too..", "hit the bars or a new restaurant with friends", "veg out on the couch alone");

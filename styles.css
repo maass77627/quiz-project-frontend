@@ -1,7 +1,7 @@
 div {
     background-color: rgb(49, 219, 191);
     height: 200px;
-  width: 50%;
+    width: 50%;
 }
 
 button {
@@ -24,4 +24,9 @@ li {
     color: blue;
     font-size: 1.2em;
     
+  }
+
+  img {
+      width: 100px;
+      height: 200px;
   }
