@@ -56,21 +56,30 @@ function buildQuiz(num) {
 
   function selectAnswers(allAnswers) {
 
-    for (let a = 0; a < allAnswers.length; a++){
+    let A = allAnswers[0]
+    let B = allAnswers[1]
+    let C = allAnswers[2]
 
-      allAnswers[a].addEventListener("click", function() {
-        allAnswers[a].style.color = "red";
-        })
 
-    }
+    A.addEventListener("click", function(){
+    B.style.color = "blue"
+    C.style.color = "blue"
+    A.style.color = "red"
+    })
+
+      B.addEventListener("click", function(){
+      A.style.color = "blue"
+      C.style.color = "blue"
+      B.style.color = "red"
+      }) 
+
+      C.addEventListener("click", function(){
+        A.style.color = "blue"
+        B.style.color = "blue"
+        C.style.color = "red"
+    }) 
+
   }
-    // for (answer of allAnswers) {
-
-  //   answer.addEventListener("click", function() {
-  //     answer.style.color = "red";
-      
-    
-  // })
 
     
 
