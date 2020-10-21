@@ -1,113 +1,125 @@
-const myQuestions = [
+// const myQuestions = [
 
-    {
-        question: "When the weekend comes I like too..",
-        answers: {
-          a: "hit the bars or a new restaurant with friends",
-          b: "veg out on the couch alone",
-          c: "catch up on work, chores or the gym"
-        },
-        number: "1"
-      },
-      {
-        question: "You are planning a vacation with your friend.. do you",
-        answers: {
-          a: "meticulously plan every detail",
-          b: "jump in the car and wing it, you fly by the seat of your pants",
-          c: "have somewhat of a plan but you are open to change"
-        },
-        number: "2"
-      },
-      {
-        question: "When you are in a work environment you ",
-        answers: {
-          a: "prefer to work independently, you get more done",
-          b: "Usually are jumping to take charge and lead your coworkers",
-          c: "are the person people go to for help and advice",
-        },
-        number: "3"
-      },
-        {
-          question: "You are going to a movie what would you most like to see",
-          answers: {
-            a: "a documentary",
-            b: "a comedy",
-            c: "action/war movie"
-          },
-          number: "4"
-        },
-        {
-        question: "What kind of music would you most enjoy",
-          answers: {
-            a: "mellow",
-            b: "soft rock",
-            c: "classical"
-          },
-          number: "5"
-        },
-        {
-          question: "A big test is coming up in school..are you more likely to",
-            answers: {
-              a: "wait till last minute and pull an all nighter",
-              b: "Start studying a week in advance",
-              c: "wing it your confident you'll be fine"
-            },
-           number: "6"
-          },
-          {
-            question: "You had plans to go to a concert with a friend and they cancel last minute..",
-              answers: {
-                a: "you shrug it off and make new plans",
-                b: "go anyway, flying solo could be fun",
-                c: "sulk at home your night is ruined"
-              },
-              number: "7"
-            },
-            {
-              question: "If you hear a strange noise late at night",
-                answers: {
-                  a: "you stay in bed and hide under covers",
-                  b: "jump up and go investigate yourself",
-                  c: "call someone for help"
-                },
-                number: "8"
-              },
-              {
-                question: "What type of person are you..",
-                  answers: {
-                    a: "morning",
-                    b: "night",
-                    c: "evening"
-                  },
-                  number: "9"
-                },
-                {
-                  question: "You ordering pizza which would you prefer",
-                    answers: {
-                      a: "mushrooms and spinach",
-                      b: "anchovies",
-                      c: "pepperoni and sausage"
-                    },
-                    number: "10"
-                  },
+//     {
+//         question: "When the weekend comes I like too..",
+//         answers: {
+//           a: "hit the bars or a new restaurant with friends",
+//           b: "veg out on the couch alone",
+//           c: "catch up on work, chores or the gym"
+//         },
+//         number: "1"
+//       },   // let questionTwo = new Scenario("2", "You are planning a vacation with your friend.. do you", "meticulously plan every detail", "jump in the car and wing it, you fly by the seat of your pants", "have somewhat of a plan but you are open to change");
+//       {
+//         question: "You are planning a vacation with your friend.. do you",
+//         answers: {
+//           a: "meticulously plan every detail",
+//           b: "jump in the car and wing it, you fly by the seat of your pants",
+//           c: "have somewhat of a plan but you are open to change"
+//         },
+//         number: "2"
+//       },  //let questionFour = new Scenario("4", "When you are in a work environment you ", "prefer to work independently, you get more done", "Usually are jumping to take charge and lead your coworkers", "are the person people go to for help and advice");
+//       {
+//         question: "When you are in a work environment you ",
+//         answers: {
+//           a: "prefer to work independently, you get more done",
+//           b: "Usually are jumping to take charge and lead your coworkers",
+//           c: "are the person people go to for help and advice",
+//         },
+//         number: "3"
+//       },
+//         {
+//           question: "You are going to a movie what would you most like to see",
+//           answers: {
+//             a: "a documentary",
+//             b: "a comedy",
+//             c: "action/war movie"
+//           },
+//           number: "4"
+//         },
+//         {
+//         question: "What kind of music would you most enjoy",
+//           answers: {
+//             a: "mellow",
+//             b: "soft rock",
+//             c: "classical"
+//           },
+//           number: "5"
+//         },
+//         {
+//           question: "A big test is coming up in school..are you more likely to",
+//             answers: {
+//               a: "wait till last minute and pull an all nighter",
+//               b: "Start studying a week in advance",
+//               c: "wing it your confident you'll be fine"
+//             },
+//            number: "6"
+//           },
+//           {
+//             question: "You had plans to go to a concert with a friend and they cancel last minute..",
+//               answers: {
+//                 a: "you shrug it off and make new plans",
+//                 b: "go anyway, flying solo could be fun",
+//                 c: "sulk at home your night is ruined"
+//               },
+//               number: "7"
+//             },
+//             {
+//               question: "If you hear a strange noise late at night",
+//                 answers: {
+//                   a: "you stay in bed and hide under covers",
+//                   b: "jump up and go investigate yourself",
+//                   c: "call someone for help"
+//                 },
+//                 number: "8"
+//               },
+//               {
+//                 question: "What type of person are you..",
+//                   answers: {
+//                     a: "morning",
+//                     b: "night",
+//                     c: "evening"
+//                   },
+//                   number: "9"
+//                 },
+//                 {
+//                   question: "You ordering pizza which would you prefer",
+//                     answers: {
+//                       a: "mushrooms and spinach",
+//                       b: "anchovies",
+//                       c: "pepperoni and sausage"
+//                     },
+//                     number: "10"
+//                   },
       
 
 
 
 
 
-]
+// ]
 
-// class Scenario {
+class Scenario {
 
-//   constructor(number, question, answera, answerb, answerc, ) {
-//   this.number = number
-//   this.question = question
-//   this.answera = answera
-//   this.answerb = answerb
-//   this.answerc = answerc
+  constructor(number, question, answera, answerb, answerc, ) {
+  this.number = number
+  this.question = question
+  this.answera = answera
+  this.answerb = answerb
+  this.answerc = answerc
 
-// }
-// }
+}
+}
 
-// let questionOne = new Scenario("1", "When the weekend comes I like too..", "hit the bars or a new restaurant with friends", "veg out on the couch alone");
+const question1 = new Scenario("1", "When the weekend comes I like too..", "hit the bars or a new restaurant with friends", "veg out on the couch alone", "catch up on work, chores or the gym");
+const question2 = new Scenario("2", "You are planning a vacation with your friend.. do you", "meticulously plan every detail", "jump in the car and wing it, you fly by the seat of your pants", "have somewhat of a plan but you are open to change");
+const question3 = new Scenario("3", "When you are in a work environment you ", "prefer to work independently, you get more done", "Usually are jumping to take charge and lead your coworkers", "are the person people go to for help and advice");
+const question4 = new Scenario("4", "You are going to a movie what would you most like to see", "a documentary", "a comedy", "action/war movie");
+const question5 = new Scenario("5", "What kind of music would you most enjoy", "mellow", "soft rock", "classical");
+const question6 = new Scenario("6", "A big test is coming up in school..are you more likely to", "wait till last minute and pull an all nighter", "Start studying a week in advance", "wing it your confident you'll be fine");
+const question7 = new Scenario("7", "You had plans to go to a concert with a friend and they cancel last minute..", "you shrug it off and make new plans", "go anyway, flying solo could be fun", "sulk at home your night is ruined");
+const question8 = new Scenario("8", "If you hear a strange noise late at night", "you stay in bed and hide under covers", "jump up and go investigate yourself", "call someone for help");
+const question9 = new Scenario("9", "What type of person are you..", "morning", "night", "evening");
+const question10 = new Scenario("10", "You ordering pizza which would you prefer", "mushrooms and spinach", "anchovies", "pepperoni and sausage");
+
+let allQuestions = []
+allQuestions.push(question1, question2, question3, question4, question5, question6, question7, question8, question9, question10)

@@ -2,22 +2,6 @@
 // owlimage.src  = 'newowl.png'
 // //document.querySelector('.container').appendChild(image)
 
-
-// const myAnimals = [
-
-//     {
-//         Animal: "Owl" ,
-//         pic: owlimage,
-//         description: "1"
-//       },
-//       {
-//         animal: "Cat",
-//         pic: owlimage,
-//         description: "2"
-//     }
-
-// ]
-
 class Animal {
 
   constructor(name, imgsrc, description) {
@@ -27,4 +11,10 @@ class Animal {
   } 
 }
 
-let owl = new Animal("Owl", "video-frontend/newowl.png", "description");
+let owl = new Animal("Owl", "newowl.png", "description");
+let dog = new Animal("Dog", "dog.jpg", "description");
+let cat = new Animal("Cat", "cat.jpg", "description");
+let sloth = new Animal("Sloth", "sloth.jpg", "description");
+let otter = new Animal("Otter", "otter.jpg", "description");
+let beaver = new Animal("Beaver", "beav.jpg", "description");
+let lion = new Animal("Lion", "lion.png", "description");

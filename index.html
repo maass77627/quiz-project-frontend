@@ -13,16 +13,24 @@
       <title>Quiz</title>
     </div>
     <button id="submit">Start</button>
+
+    <form id="myform" action='http://localhost:3001/users', method="POST">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" value="John"><br>
+      <input type="submit" id="sub" value="Submit">
+    </form>
+
     <div id="results">
       <title>Results</title>
-      <h1>Animal Name</h1>
-      <img id="myImage" src="newowl.png">
-      <h4>description</h4>
+      <h1 id="name">Animal Name</h1>
+      <img id="myImage" src="dog.jpg">
+      <h4 id="context">description</h4>
     </div>
 
   </center>
     
-
+  <script type="application/javascript" src="src/form.js" charset="UTF-8"></script>
+  <script type="application/javascript" src="src/user.js" charset="UTF-8"></script>
   <script type="application/javascript" src="src/animals.js" charset="UTF-8"></script>
     <script type="application/javascript" src="src/questions.js" charset="UTF-8"></script>
    <script type="application/javascript" src="src/index.js" charset="UTF-8"></script>
