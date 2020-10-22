@@ -1,21 +1,25 @@
 const animalHeading = document.getElementById("name");
 const animalImage = document.getElementById('myImage');
 const animalDescription = document.getElementById('context');
+let userAnswers = []
 
-function collectAnswers(alltAnsers) {
-    let userAnswers = []
-submitButton.addEventListener("click", function(){
+function collectAnswers(answerOptions) {
     
+ submitButton.addEventListener("click", function(){
 
-    for (answer of alltAnsers) {
+    for (answer of answerOptions) {
+    
     if (answer.style.color == "red") {
+        console.log(answer)
         userAnswers.push(answer)
+        answer.style.color = "blue"
     }
-    }
-
-    })
-    console.log(userAnswers)
 }
+    })
+    
+}
+
+    
 
 
 
@@ -34,4 +38,3 @@ submitButton.addEventListener("click", function(){
 
 
 
-// }

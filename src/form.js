@@ -3,18 +3,17 @@ var form = document.getElementById("myform")
 document.getElementById("sub").addEventListener("click", function(event){
     event.preventDefault()
     form.style.display = "none"
+    let newUsername = document.getElementById("username").value; 
+    submitData(newUsername)
   });
 
-
-document.getElementById("sub").addEventListener("click", submitData());
-
-function submitData() {
+function submitData(newUsername) {
  
   let formData = {
-      username: username
+      username: newUsername
       
   };
-  console.log(formData);
+  
   let configObj = {
       method: "POST",
       headers: {
@@ -23,7 +22,7 @@ function submitData() {
       },
       body: JSON.stringify(formData)
   };
-//return
+
   fetch("http://localhost:3001/users", configObj)
       .then(function(response) {
         return response.json();

@@ -6,6 +6,8 @@
     <title>Spirit Animal Quiz</title>
   </head>
   <body> 
+    <div id="userResults" class="userResults">Hello World</div>
+    <div id="userInfo" class="userInfo">Hello World</div>
     <center>
       <h1>What is your Spirit Animal??</h1>
    
@@ -14,16 +16,18 @@
     </div>
     <button id="submit">Start</button>
 
+    
+    
     <form id="myform" action='http://localhost:3001/users', method="POST">
       <label for="username">Username:</label><br>
-      <input type="text" id="username" name="username" value="John"><br>
+      <input type="text" id="username" name="username" value="username"><br>
       <input type="submit" id="sub" value="Submit">
     </form>
 
     <div id="results">
       <title>Results</title>
-      <h1 id="name">Animal Name</h1>
-      <img id="myImage" src="dog.jpg">
+      <h3 id="name">Animal Name</h3>
+      <img id="myImage" src="otter.jpg">
       <h4 id="context">description</h4>
     </div>
 

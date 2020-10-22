@@ -2,106 +2,19 @@ const quizContainer = document.getElementById(`quiz`);
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 
-let i = 0
-
-// let A = allQuestions[i].answera
-// let B = allQuestions[i].answerb
-// let C = allQuestions[i].answerc
-
-//buildQuiz(i)
-
-// const answerItema = document.createElement("li")
-// const answerItemb = document.createElement("li")
-// const answerItemc = document.createElement("li")
-// const allAnswers = []
+let i = -1
 
 submitButton.addEventListener("click", function(){
-
+    if (i < 11){
     quizContainer.innerHTML = " "
     submitButton.innerHTML = "Submit"
-    //i++
+    i++
+    //for (i = 0; i < 11; i++){
     buildQuiz(i)
+    }
   })
 
-
-// function buildQuiz(num) {
-//     // for (i=0; i < myQuestions.length; i++) {
-
-//     let newQuestion = myQuestions[num].question
-//     let heading = document.createElement("h2")
-//     heading.innerHTML = newQuestion
-//     quizContainer.appendChild(heading)
-
-
-//     let ol = document.createElement("ol")
-//     ol.setAttribute('type', 'A')
-//     quizContainer.appendChild(ol)
-
-
-//     let answerA = myQuestions[num].answers.a;
-//     let answerB = myQuestions[num].answers.b;
-//     let answerC = myQuestions[num].answers.c;
-
-//     answerItema.innerText = answerA
-//     answerItemb.innerText = answerB
-//     answerItemc.innerText = answerC
-
-//     ol.appendChild(answerItema)
-//     ol.appendChild(answerItemb)
-//     ol.appendChild(answerItemc)
-
-//     allAnswers.push(answerItema, answerItemb, answerItemc)
-
-//     selectAnswers(allAnswers)
-
-//   }
-
-//   function selectAnswers(allAnswers) {
-
-//     let A = allAnswers[0]
-//     let B = allAnswers[1]
-//     let C = allAnswers[2]
-
-
-//     A.addEventListener("click", function(){
-//     B.style.color = "blue"
-//     C.style.color = "blue"
-//     A.style.color = "red"
-//     })
-
-//     A.addEventListener("mouseover", function(){
-//       A.style.color = "yellow"
-      
-//       })
-
-//       B.addEventListener("click", function(){
-//       A.style.color = "blue"
-//       C.style.color = "blue"
-//       B.style.color = "red"
-//       }) 
-
-//       B.addEventListener("mouseover", function(){
-//         B.style.color = "yellow"
-//         }) 
-
-//       C.addEventListener("click", function(){
-//         A.style.color = "blue"
-//         B.style.color = "blue"
-//         C.style.color = "red"
-//     })
-//     C.addEventListener("mouseover", function(){
-//       C.style.color = "yellow"
-//   })
-
-//   collectAnswers(allAnswers)
-// }
-
-    
-//     let A = allAnswers[0]
-//  ]  let B = allAnswers[1]
-//     let C = allAnswers[2]
-
- function buildQuiz(i) {
+function buildQuiz(i) {
   
   let h2 = document.createElement("h2")
   h2.innerText = allQuestions[i].number + "." + allQuestions[i].question;
@@ -113,8 +26,6 @@ submitButton.addEventListener("click", function(){
   let C = allQuestions[i].answerc
   allAnswers.push(A, B, C)
   
-  
-   
   let AA = document.createElement("li")
   let BB = document.createElement("li")
   let CC = document.createElement("li")
@@ -125,14 +36,31 @@ submitButton.addEventListener("click", function(){
   ol.setAttribute('type', 'A')
   quizContainer.appendChild(ol)
 
-  
   ol.appendChild(AA)
   ol.appendChild(BB)
   ol.appendChild(CC)
 
-  i++
+  AA.addEventListener("click", function(){
+    BB.style.color = "blue"
+    CC.style.color = "blue"
+    AA.style.color = "red"
+  })
 
- }
+  BB.addEventListener("click", function(){
+    CC.style.color = "blue"
+    AA.style.color = "blue"
+    BB.style.color = "red"
+  })
+
+  CC.addEventListener("click", function(){
+    AA.style.color = "blue"
+    BB.style.color = "blue"
+    CC.style.color = "red"
+  })
+ let answerOptions = []
+ answerOptions.push(AA, BB, CC)
+ collectAnswers(answerOptions)
+}
 
 
 
