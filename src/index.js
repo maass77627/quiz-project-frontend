@@ -1,16 +1,19 @@
 const quizContainer = document.getElementById(`quiz`);
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
+//let answerOptions = []
 
 let i = -1
 
 submitButton.addEventListener("click", function(){
-    if (i < 11){
+    if (i <= 8) {
     quizContainer.innerHTML = " "
     submitButton.innerHTML = "Submit"
     i++
-    //for (i = 0; i < 11; i++){
     buildQuiz(i)
+    // } else {
+    //   //quizContainer.innerHTML = " "
+    //   collectAnswers(answerOptions)
     }
   })
 
@@ -30,8 +33,11 @@ function buildQuiz(i) {
   let BB = document.createElement("li")
   let CC = document.createElement("li")
   AA.innerText = A
+  AA.id = "1"
   BB.innerText = B
+  BB.id = "2"
   CC.innerText = C
+  CC.id = "3"
   let ol = document.createElement("ol")
   ol.setAttribute('type', 'A')
   quizContainer.appendChild(ol)
@@ -57,8 +63,9 @@ function buildQuiz(i) {
     BB.style.color = "blue"
     CC.style.color = "red"
   })
- let answerOptions = []
+  let answerOptions = []
  answerOptions.push(AA, BB, CC)
+ console.log(answerOptions)
  collectAnswers(answerOptions)
 }
 

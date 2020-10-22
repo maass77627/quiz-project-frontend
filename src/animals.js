@@ -11,10 +11,10 @@ class Animal {
   } 
 }
 
-let owl = new Animal("Owl", "newowl.png", "description");
-let dog = new Animal("Dog", "dog.jpg", "description");
-let cat = new Animal("Cat", "cat.jpg", "description");
-let sloth = new Animal("Sloth", "sloth.jpg", "description");
-let otter = new Animal("Otter", "otter.jpg", "description");
-let beaver = new Animal("Beaver", "beav.jpg", "description");
-let lion = new Animal("Lion", "lion.png", "description");
+let owl = new Animal("Owl", "newowl.png", "wise, planner night");
+let dog = new Animal("Dog", "dog.jpg", "loyal social playful friendly");
+let cat = new Animal("Cat", "cat.jpg", "independent scared");
+let sloth = new Animal("Sloth", "sloth.jpg", "lazy tired");
+let otter = new Animal("Otter", "otter.jpg", "playful, curious, energetic, social");
+let beaver = new Animal("Beaver", "beav.jpg", "hard working");
+let lion = new Animal("Lion", "lion.png", "brave leader outgoing");
