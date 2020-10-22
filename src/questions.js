@@ -25,3 +25,4 @@ const question10 = new Scenario("10", "You ordering pizza which would you prefer
 
 let allQuestions = []
 allQuestions.push(question1, question2, question3, question4, question5, question6, question7, question8, question9, question10)
+//can do for each scenario

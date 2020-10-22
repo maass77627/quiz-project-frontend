@@ -1,8 +1,6 @@
 const quizContainer = document.getElementById(`quiz`);
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
-//let answerOptions = []
-
 let i = -1
 
 submitButton.addEventListener("click", function(){
@@ -11,9 +9,6 @@ submitButton.addEventListener("click", function(){
     submitButton.innerHTML = "Submit"
     i++
     buildQuiz(i)
-    // } else {
-    //   //quizContainer.innerHTML = " "
-    //   collectAnswers(answerOptions)
     }
   })
 
@@ -88,50 +83,6 @@ function buildQuiz(i) {
 
 
 
-// fetch("http://localhost:3001/questions")
-// .then(function(response) {
-//   return response.json();
-// })
-// .then(function(json){
-//     let questionArray = []
-//     questionArray.push(json)
-//     console.log(questionArray)
-//     allQuestions = questionArray
-//     buildQuiz(allQuestions)
-// })
-
-
-
-// function buildQuiz(allQuestions) {
-//     for (i = 0; i < allQuestions.length; i++) {
-//          let newQuestion = allQuestions[0][i]["question"];
-//          let heading =  document.createElement("h2")
-//          heading.innerHTML = newQuestion
-//          quizContainer.appendChild(heading)
-
-        //  let ol = document.createElement("ol")
-        //  ol.setAttribute('type', 'A')
-        //  quizContainer.appendChild(ol)
-         
-         
-         
-//          let answerA = allQuestions[0][i]["answera"];
-//          let answerB = allQuestions[0][i]["answerb"];
-//          let answerC = allQuestions[0][i]["answerc"];
-
-//          let answerItema = document.createElement("li")
-//          let answerItemb = document.createElement("li")
-//          let answerItemc = document.createElement("li")
-
-//          answerItema.innerText = answerA
-//          answerItemb.innerText = answerB
-//          answerItemc.innerText = answerC
-         
-//          ol.appendChild(answerItema)
-//          ol.appendChild(answerItemb)
-//          ol.appendChild(answerItemc)
-//     }
-// }
 
 
 

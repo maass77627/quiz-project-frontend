@@ -1,4 +1,5 @@
 var form = document.getElementById("myform")
+//let currentUser = ""
 
 document.getElementById("sub").addEventListener("click", function(event){
     event.preventDefault()
@@ -29,5 +30,26 @@ function submitData(newUsername) {
       })
       .then(function(object) {
         console.log(object);
+        // let currentUser = object
+        // newFunction(currentUser)
       });
     }
+
+    // function newFunction(currentUser) {
+    //   console.log(currentUser)
+    // }
+
+  //   class User {
+  //     constructor(userJSON) {
+  //         this.userName = userJSON.name
+  //         this.id = userJSON.id
+  //     }
+  // }
+
+  //class User {
+    //        constructor(username, result) {
+    //            this.username = username
+    //            this.result = result
+    
+    //        }
+    //    }

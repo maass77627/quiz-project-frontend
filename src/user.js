@@ -14,17 +14,17 @@ function fetchUsers() {
        usersResults.appendChild(ul)
        for (element of lastTen){
         let li = document.createElement("li")
-        li.innerText = element.username
+        li.innerText = element.username //+ element.result
         ul.appendChild(li)
         let li2 = document.createElement("li")
         li2.innerText = element.score
        }
    }
 
-   class User {
-       constructor(username, result) {
-           this.username = username
-           this.result = result
+//    class User {
+//        constructor(username, result) {
+//            this.username = username
+//            this.result = result
 
-       }
-   }
+//        }
+//    }

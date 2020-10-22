@@ -1,5 +1,5 @@
 const animalHeading = document.getElementById("name");
-const animalImage = document.getElementById('myImage')//.src;
+const animalImage = document.getElementById('myImage')
 const animalDescription = document.getElementById('context');
 let userAnswers = []
 let animalArray = []
@@ -8,7 +8,6 @@ let userScore = []
 
 function collectAnswers(answerOptions) {
  submitButton.addEventListener("click", function(){
-     //if (userAnswers.length <= 10) {
          for (answer of answerOptions) {
             if (answer.style.color == "red") {
                 userAnswers.push(answer)
@@ -22,8 +21,6 @@ function collectAnswers(answerOptions) {
 }
 
 function nextStep(userAnswers) {
-    console.log(userAnswers)
-    //let animalArray = []
     if (userAnswers[0].id == "1"){
         animalArray.push("otter")
     } else if (userAnswers[0].id == "2") {
@@ -103,13 +100,10 @@ function nextStep(userAnswers) {
     } else {
         animalArray.push("sloth")
     }
-        //showResults(animalArray)
         mostFreqStr(animalArray)
     }
 
     function mostFreqStr(arr) {
-        // let obj = {}, mostFreq = 0, which = [];
-  
         arr.forEach(ea => {
           if (!obj[ea]) {
             obj[ea] = 1;
@@ -124,7 +118,6 @@ function nextStep(userAnswers) {
             which.push(ea);
           }
         });
-        console.log(which)
         callResults(which)
         return which;
         
@@ -133,25 +126,18 @@ function nextStep(userAnswers) {
 
     function callResults(which) {
         if (which[0] == "dog"){
-            console.log("dog")
             displayResults(dog)
         } else if (which[0] == "cat"){
-            console.log("cat")
             displayResults(cat)
         } else if (which[0] == "otter"){
-            console.log("otter")
             displayResults(otter)
         } else if (which[0] == "lion"){
-            console.log("lion")
             displayResults(lion)
         } else if (which[0] == "owl"){
-            console.log("owl")
             displayResults(owl)
         } else if (which[0] == "beaver"){
-            console.log("beaver")
             displayResults(beaver)
         } else if (which[0] == "sloth"){
-            console.log("sloth")
             displayResults(sloth)
         }
     }
@@ -162,27 +148,10 @@ function nextStep(userAnswers) {
         animalDescription.innerText = animal.description
         userScore.push(animal.name, animal.imgsrc, animal.description)
     }
-// animalHeading
-// animalDescription
-// animalImage
-
-//name, imgsrc, description
     
 
 
 
-
-
-
-
-
-
-// submitButton.addEventListener("click", function(){
-//         if 
-    
-//   })
-
-// function calculations(array) {
 
 
 

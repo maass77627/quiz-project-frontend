@@ -1,7 +1,3 @@
-// const owlimage = document.createElement('img')
-// owlimage.src  = 'newowl.png'
-// //document.querySelector('.container').appendChild(image)
-
 class Animal {
 
   constructor(name, imgsrc, description) {
