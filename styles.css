@@ -1,12 +1,23 @@
-div {
+.quiz {
     background-color: rgb(49, 219, 191);
+    height: 150px;
+    width: 550px;
+    border-radius: 25px;
+}
+
+.results {
+  background-color: rgb(49, 219, 191);
     height: 350px;
     width: 550px;
+    border-radius: 25px;
+
 }
 
 button {
-    background-color: rgb(80, 49, 219);
-    
+    background-color: rgb(16, 0, 109);
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
 }
 
 body {
@@ -14,7 +25,7 @@ body {
 }
 
 h2 {
-  color: blue;
+  color: rgb(3, 3, 65);
   
   background-color: powderblue;
 
@@ -22,15 +33,23 @@ h2 {
 
 li {
     position: relative;
-    color: blue;
+    color: rgb(161, 93, 4);
     font-size: 20px;
-    background-color: powderblue;
+    background-color: rgb(29, 170, 189);
 }
 
 ::marker {
     color: blue;
     font-size: 1.2em;
     
+  }
+
+  .animalImage {
+    /* left: 550px;
+    top: 200px; */
+    border-radius: 25px;
+    width: 400px;
+    height: 150px;
   }
 
   img {
@@ -41,17 +60,19 @@ li {
   form {
       
     position: absolute;
-    left: 600px;
+    left: 550px;
     top: 200px;
-    color: #cc005f;
-      background-color: #00d9ff;
+    color: #ccad00;
+      background-color: #0b606e;
       font-family: Georgia, serif;
       font-size: 16px;
-      width: 300;
-      height: 300;
+      width: 300px;
+      height: 100px;
+      border-radius: 25px;
   } 
 
   .userResults {
+    font-weight: bold;
     position: absolute;
     float:left;
     left: 0px;
@@ -59,7 +80,7 @@ li {
     width: 300px;
     height: 700px;
     background-color: #054550;
-
+    border-radius: 25px;
 
   }
 
@@ -71,10 +92,12 @@ li {
     width: 300px;
     height: 700px;
     background-color: #054550;
+    border-radius: 25px;
 }
 
 h1 {
   font: calibri;
-  color: rgb(255, 113, 47);
+  color: rgb(10, 4, 46);
   text-shadow: rgb(255, 141, 47);
+  background-color: #974e0a;
 }

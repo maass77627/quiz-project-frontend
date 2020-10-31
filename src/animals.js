@@ -1,9 +1,12 @@
+
 class Animal {
+  
 
   constructor(name, imgsrc, description) {
     this.name = name
     this.imgsrc = imgsrc
     this.description = description
+    
   } 
 }
 
@@ -14,3 +17,7 @@ let sloth = new Animal("Sloth", "sloth.jpg", "lazy tired");
 let otter = new Animal("Otter", "otter.jpg", "playful, curious, energetic, social");
 let beaver = new Animal("Beaver", "beav.jpg", "hard working");
 let lion = new Animal("Lion", "lion.png", "brave leader outgoing");
+
+// Animal.allInstances = [];
+// Animal.allInstances.push(this);
+// console.log(Animal.allInstances)

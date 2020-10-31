@@ -4,17 +4,31 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
     <title>Spirit Animal Quiz</title>
+  
   </head>
   <body> 
-    <div id="userResults" class="userResults">Hello World</div>
+    <div id="userResults" class="userResults">
+      <h3>User Results</h3>
+    
+    </div>
     <div id="userInfo" class="userInfo">Hello World</div>
     <center>
+      <!-- <img class="animalImage" id="animalImage" src="pigspiran.jpg"> -->
       <h1>What is your Spirit Animal??</h1>
    
-      <div id="quiz">
+      <div class="quiz" id="quiz">
       <title>Quiz</title>
     </div>
-    <button id="submit">Start</button>
+    <button class="submit" id="submit">Start</button>
+
+    <div hidden id="info" class="info">
+      <label for="example">Enter Text
+      </label>
+      <input id="example" type="text"
+             name="Ntext" value="comment" size="20">
+      <input id="sent" type="submit"  
+             value="Send"> 
+  </div>
 
     
     
@@ -24,7 +38,7 @@
       <input type="submit" id="sub" value="Submit">
     </form>
 
-    <div id="results">
+    <div class="results" id="results"hidden>
       <title>Results</title>
       <h3 id="name">Animal Name</h3>
       <img id="myImage" src="otter.jpg">

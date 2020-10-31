@@ -15,7 +15,7 @@ submitButton.addEventListener("click", function(){
 function buildQuiz(i) {
   
   let h2 = document.createElement("h2")
-  h2.innerText = allQuestions[i].number + "." + allQuestions[i].question;
+  h2.innerText = allQuestions[i].number + ". " + allQuestions[i].question;
   quizContainer.appendChild(h2)
 
   let allAnswers = []
