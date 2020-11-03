@@ -171,41 +171,27 @@ function nextStep(userAnswers) {
         currentUser.score = animal.name
 
         let newScore = currentUser.score 
+        console.log(newScore)
        
         submitScore(newScore)
     }
 
 
     function submitScore(newScore) {
- 
-        let formData = {
-           // username: currentUser,
-            score: newScore
-        };
-        
-        let configObj = {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "Accept": "application/json"
-            },
-            body: JSON.stringify(formData)
-       };
-      
-        fetch(`${BASE_PATH}\`${currentUser.id}\``, configObj)
-            // .then(function(response) {
-            //   return response.json();
-            // })
-            // .then(function(object) {
-            //   console.log(object);
-            //  // currentUser = object
-            //   // newFunction(currentUser)
-            // });
-          }
-    
-           // const BASE_PATH = `https://localhost:3001/users/`
-         // `${BASE_PATH}\`${currentId}\``
 
+        let fetcher = currentUser.id
+
+        fetch(`http://localhost:3001/users/${fetcher}`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json'
+    },
+    body: JSON.stringify({ score: newScore })
+  }).then(resp => resp.json())
+  
+
+          }
 
 
 

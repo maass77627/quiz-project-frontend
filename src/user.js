@@ -23,7 +23,7 @@ function fetchUsers() {
         li.appendChild(li2)
         // let comment = document.getElementById("info")
         // li2.appendChild(comment)
-
+       
         li.addEventListener("click", function(){
             let comment = document.getElementById("info")
             comment.removeAttribute('hidden')
@@ -33,7 +33,7 @@ function fetchUsers() {
         li.addEventListener("mouseover", function(){
             li.style.color = "green"
         })
-
+    }
         document.getElementById("sent").addEventListener("click", function(){
             
             let newComment = document.getElementById("example").value
@@ -42,7 +42,7 @@ function fetchUsers() {
             saveComment(newComment)
 
         })
-        }
+       // }
 
         function saveComment(newComment) {
             let formData = {
@@ -59,14 +59,14 @@ function fetchUsers() {
                 body: JSON.stringify(formData)
                 
             };
-            console.log(formData)
+            //console.log(formData)
           
             fetch("http://localhost:3001/comments", configObj)
                 .then(function(response) {
                   return response.json();
                 })
                 .then(function(json) {
-                  console.log(json);
+                  //console.log(json);
                   
                 });
 
