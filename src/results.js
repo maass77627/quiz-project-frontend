@@ -1,4 +1,4 @@
-const BASE_PATH = `https://localhost:3001/users/`
+//const BASE_PATH = `https://localhost:3001/users/`
 const animalHeading = document.getElementById("name");
 const animalImage = document.getElementById('myImage')
 const animalDescription = document.getElementById('context');

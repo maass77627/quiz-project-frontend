@@ -16,13 +16,12 @@ function fetchUsers() {
        usersResults.appendChild(ul)
        for (element of lastTen){
         let li = document.createElement("li")
-        li.innerText = element.username //+ element.result
+        li.innerText = element.username 
         ul.appendChild(li)
         let li2 = document.createElement("li")
         li2.innerText = element.score
         li.appendChild(li2)
-        // let comment = document.getElementById("info")
-        // li2.appendChild(comment)
+        
        
         li.addEventListener("click", function(){
             let comment = document.getElementById("info")
@@ -42,7 +41,7 @@ function fetchUsers() {
             saveComment(newComment)
 
         })
-       // }
+       
 
         function saveComment(newComment) {
             let formData = {
@@ -59,14 +58,12 @@ function fetchUsers() {
                 body: JSON.stringify(formData)
                 
             };
-            //console.log(formData)
           
             fetch("http://localhost:3001/comments", configObj)
                 .then(function(response) {
                   return response.json();
                 })
                 .then(function(json) {
-                  //console.log(json);
                   
                 });
 

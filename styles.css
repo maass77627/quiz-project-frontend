@@ -20,6 +20,17 @@ button {
     font-weight: bold;
 }
 
+.scores {
+  position: absolute;
+  left: 1150px;
+  top: 50px;
+  background-color: rgb(16, 0, 109);
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+
+}
+
 body {
     background-color: powderblue;
 }
