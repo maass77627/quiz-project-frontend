@@ -1,4 +1,3 @@
-//const BASE_PATH = `https://localhost:3001/users/`
 const animalHeading = document.getElementById("name");
 const animalImage = document.getElementById('myImage')
 const animalDescription = document.getElementById('context');
@@ -20,18 +19,7 @@ function collectAnswers(answerOptions) {
         nextStep(userAnswers)   
         }
     })
- }         //  let animalAnswers = [otter, sloth, beaver, otter, sloth, beaver, owl, otter, dog, cat, lion, owl, cat, dog, lion, sloth, dog, cat, otter, beaver, sloth, otter, dog, sloth
-// cat, lion, beaver, cat, lion beaver, otter, owl, sloth]
-//     function nextStep(usersAnswers, animalAnswers) {
-   // for (i=0; i<usersAnswers.length; i++) {
-// if (userAnswers[0].id == "1"){
-//     animalArray.push("otter")
-// } else if (userAnswers[0].id == "2") {
-//     animalArray.push("sloth")
-// } else {
-//     animalArray.push("beaver")
-//     }
-// })
+ }       
 
 function nextStep(userAnswers) {
     if (userAnswers[0].id == "1"){
@@ -131,19 +119,8 @@ function nextStep(userAnswers) {
             which.push(ea);
           }
         });
-        // let animalScore = which[0]
-        // animalScore = animalScore.replace(/"/g,"");
-        // console.log(animalScore)
-        // displayResults(animalScore)
         callResults(which)
-        return which;
-        
       }
-
-    //   function callResults(which,animal) {
-    //     if (which[0] == "animal") {
-    //         displayResults(animal)
-    //     }}
 
     function callResults(which) {
         if (which[0] == "dog"){
@@ -171,8 +148,6 @@ function nextStep(userAnswers) {
         currentUser.score = animal.name
 
         let newScore = currentUser.score 
-        console.log(newScore)
-       
         submitScore(newScore)
     }
 

@@ -18,11 +18,9 @@ function buildQuiz(i) {
   h2.innerText = allQuestions[i].number + ". " + allQuestions[i].question;
   quizContainer.appendChild(h2)
 
-  let allAnswers = []
   let A = allQuestions[i].answera
   let B = allQuestions[i].answerb
   let C = allQuestions[i].answerc
-  allAnswers.push(A, B, C)
   
   let AA = document.createElement("li")
   let BB = document.createElement("li")
@@ -60,7 +58,6 @@ function buildQuiz(i) {
   })
   let answerOptions = []
  answerOptions.push(AA, BB, CC)
- console.log(answerOptions)
  collectAnswers(answerOptions)
 }
 

@@ -1,59 +1,58 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="utf-8">
-    <title>Spirit Animal Quiz</title>
+  <html lang="en" dir="ltr">
+    <head>
+      <link rel="stylesheet" href="styles.css">
+      <meta charset="utf-8">
+      <title>Spirit Animal Quiz</title>
   
-  </head>
+   </head>
   <body> 
-    <div id="userResults" class="userResults">
-      <h3>Friends Results</h3>
+      <div id="userResults" class="userResults">
+        <center><h3>Friends Results</h3></center>
     
-    </div>
-    <div id="userInfo" class="userInfo">User Info</div>
-    <center>
-      <!-- <img class="animalImage" id="animalImage" src="pigspiran.jpg"> -->
-      <h1>What is your Spirit Animal??</h1>
+      </div>
+      <div id="userInfo" class="userInfo">
+        <center><h3>My Comments</h3></center>
+      </div>
+        <center>
+        <h1>What is your Spirit Animal??</h1>
    
       <div class="quiz" id="quiz">
-      <title>Quiz</title>
-    </div>
-    <button class="submit" id="submit">Start</button>
+        <title>Quiz</title>
+      </div>
+        <button class="submit" id="submit">Start</button>
 
-    <div hidden id="info" class="info">
-      <label for="example">Comment</label>
-      <input id="example" type="text"
-             name="Ntext" value="text" size="20">
-      <input id="sent" type="submit"  
-             value="Send"> 
-  </div>
+      <div hidden id="info" class="info">
+        <label for="example">Leave a Comment..</label>
+          <input id="example" type="text" name="Ntext" value="" size="20">
+          <input id="sent" type="submit" value="Send"> 
+      </div>
 
     
     
-    <form id="myform" action='http://localhost:3001/users', method="POST">
-      <label for="username">Username:</label><br>
-      <input type="text" id="username" name="username" value="username"><br>
-      <input type="submit" id="sub" value="Submit">
-    </form>
+      <form id="myform" action='http://localhost:3001/users', method="POST">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" value="username"><br>
+        <input type="submit" id="sub" value="Submit">
+      </form>
 
-    <div class="results" id="results"hidden>
-      <title>Results</title>
-      <h3 id="name">Animal Name</h3>
-      <img id="myImage" src="otter.jpg">
-      <h4 id="context">description</h4>
-    </div>
+      <div class="results" id="results"hidden>
+        <title>Results</title>
+        <h3 id="name">Animal Name</h3>
+        <img id="myImage" src="otter.jpg">
+        <h4 id="context">description</h4>
+      </div>
 
-  </center>
+    </center>
 
-  <button class="scores" id="scores">My Comments</button>
+    <button class="scores" id="scores">My Comments</button>
     
   <script type="application/javascript" src="src/form.js" charset="UTF-8"></script>
   <script type="application/javascript" src="src/user.js" charset="UTF-8"></script>
   <script type="application/javascript" src="src/animals.js" charset="UTF-8"></script>
-    <script type="application/javascript" src="src/questions.js" charset="UTF-8"></script>
-   <script type="application/javascript" src="src/index.js" charset="UTF-8"></script>
-   <script type="application/javascript" src="src/results.js" charset="UTF-8"></script>
+  <script type="application/javascript" src="src/questions.js" charset="UTF-8"></script>
+  <script type="application/javascript" src="src/index.js" charset="UTF-8"></script>
+  <script type="application/javascript" src="src/results.js" charset="UTF-8"></script>
    
   
   </body>
